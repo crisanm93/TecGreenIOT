@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/Diseño\ sin\ título.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo-box {
+    margin-bottom: 50px;
+  }
+  
+  .logo-box img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .logo-box h1 {
+    color: #4CAF50;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .register-box {
+    width: 350px;
+    padding: 40px;
+    background: rgba(255, 254, 254, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .register-box h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #f9f9f9;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #333;
+  }
+  
+  .input-box input {
+    width: 90%;
+    padding: 10px 10px 10px 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+  }
+  
+  .input-box input::placeholder {
+    color: #888;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .terms input {
+    margin-right: 10px;
+  }
+  
+  .register-box input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .register-box input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .register-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .register-box a strong {
+    color: #4CAF50;
+  }
+  
+  .register-box a:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 600px) {
+    .register-box {
+      width: 90%;
+    }
+  
+    .logo-box img {
+      width: 100px;
+    }
+  
+    .logo-box h1 {
+      font-size: 28px;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Green IoT - Inicio de sesión</title>
+    <link rel="stylesheet" href="css/login.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-box">
+        <img src="img/logo 2.png" class="avatar" alt="Tech Green IoT Logo">
+        <h1>Tech Green IoT</h1>
+      </div>
+
+      <div class="login-box">
+        <h1>Inicio de sesión</h1>
+        <form id="loginForm">
+          <div class="input-box">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="username" placeholder="E-mail">
+          </div>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" id="user" placeholder="Usuario">
+          </div>
+          <div class="input-box">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Contraseña">
+          </div>
+
+          <label class="remember">
+            <input type="checkbox"> Recordarme
+          </label>
+
+          <input type="submit" id="submit" value="Iniciar sesión">
+          <a href="#">No tiene una cuenta? <strong>Registrarse</strong></a>
+        </form>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

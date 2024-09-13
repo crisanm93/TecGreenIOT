@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Navegación Dinámica</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menú  -->
+        <nav class="sidebar">
+            <ul>
+                <img src="img/logo.png" alt="Logo Fazt" class="logo">
+            
+                <li data-target="perfil">Perfil</li>
+                <li data-target="dashboard" class="active">Dashboard</li>
+                <li data-target="base-datos">Base de Datos</li>
+                <li data-target="configuracion">Configuración</li>
+                <li data-target="ayuda">Ayuda</li>
+                <li data-target="cerrar-sesion">Cerrar Sesión</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <!-- Sección del perfil -->
+            <div data-content id="perfil" class="active">
+                <h1>Perfil</h1>
+                <p>Información del perfil del usuario.</p>
+            </div> 
+
+            <!-- Sección del Dashboard -->
+            <div data-content id="dashboard" class="inactive">
+                <h1>Dashboard</h1>
+                <div class="dashboard-metrics">
+                    <!-- Cuadro 1 (grande, gráfico principal) -->
+                    <div class="metric-box large">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, gráfico principal.</p>
+                    </div>
+            
+                    <!-- Cuadro 2 (mediano) -->
+                    <div class="metric-box medium">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+            
+                    <!-- Cuadro 3 (mediano) -->
+                    <div class="metric-box medium">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+            
+                    <!-- Cuadro 4 (pequeño) -->
+                    <div class="metric-box small">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+            
+                    <!-- Cuadro 5 (pequeño) -->
+                    <div class="metric-box small">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                    <!-- Sección del perfil -->
+       
+            
+            </div>
+
+            <!-- Contenido principal dinámico -->
+            <div class="main-content">
+                <h1>Bienvenido</h1>
+                <p>Selecciona una opción en el menú para cargar la página.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
